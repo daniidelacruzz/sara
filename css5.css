@@ -194,13 +194,13 @@ footer .container {
 
     header .container {
         flex-direction: column;
-        align-items: center; /* Alinea los elementos al centro en dispositivos móviles */
+        align-items: center;
     }
 
     header nav {
         flex-wrap: wrap;
         gap: 10px;
-        justify-content: center; /* Centra los elementos del menú en dispositivos móviles */
+        justify-content: center;
     }
 
     header nav a {
@@ -219,11 +219,27 @@ footer .container {
     .image-wrapper {
         margin-right: 0;
         margin-bottom: 20px;
+        text-align: center; /* Centra la imagen */
     }
 
     .round-image {
-        width: 150px;
-        height: 150px;
+        width: 80%; /* Ajusta el ancho de la imagen al 80% del contenedor */
+        max-width: 300px; /* Establece un ancho máximo */
+        height: auto; /* Ajusta la altura automáticamente */
+        margin: 0 auto; /* Centra la imagen horizontalmente */
+    }
+
+    .texto-container {
+        margin-left: 0; /* Ajusta el margen izquierdo */
+        margin-right: 0; /* Ajusta el margen derecho */
+        text-align: center; /* Centra el texto */
+    }
+    
+    .texto-adjunto {
+        max-width: 100%; /* Ajusta el ancho máximo del texto */
+        margin-left: 0; /* Ajusta el margen izquierdo */
+        margin-right: 0; /* Ajusta el margen derecho */
+        text-align: center; /* Centra el texto */
     }
 }
 
